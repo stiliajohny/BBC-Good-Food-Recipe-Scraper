@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/jstilia/Documents/recepie_scraper"
+$VIRTUAL_ENV = r"./"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]
