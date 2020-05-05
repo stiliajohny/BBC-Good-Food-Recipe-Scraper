@@ -17,5 +17,5 @@ soup = BeautifulSoup(requested_url.text, 'html.parser')
 results = soup.find(id='recipe-ingredients')
 print(soup.title.string)
 print("\n")
-for tag in results.ul.find_all("li", recursive=True):
+for tag in results.find_all("li", recursive=True):
     print(tag.get('content'))
