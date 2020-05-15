@@ -13,8 +13,10 @@ url = sys.argv[1]
 requested_url = requests.get(url, headers=headers)
 
 soup = BeautifulSoup(requested_url.text, 'html.parser')
-
 results = soup.find(id='recipe-ingredients')
+
+print("\n")
+print(url)
 print(soup.title.string)
 print("\n")
 for tag in results.ul.find_all("li", recursive=True):
