@@ -19,5 +19,5 @@ print("\n")
 print(url)
 print(soup.title.string)
 print("\n")
-for tag in results.ul.find_all("li", recursive=True):
+for tag in results.find_all("li", recursive=True):
     print(tag.get('content'))
